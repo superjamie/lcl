@@ -28,6 +28,7 @@
  *
  * ```c
  * free(my_2d);
+ * my_2d = NULL;
  * ```
  *
  * @param  rows       The number of horizontal rows in the array
@@ -53,6 +54,7 @@ void *lcl_array2d_init(size_t rows, size_t cols, size_t type_size);
  *
  * ```c
  * free(my_3d);
+ * my_3d = NULL;
  * ```
  *
  * @param  layers     The number of layers of "row x column" arrays
