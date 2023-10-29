@@ -19,7 +19,7 @@
  * The returned pointer can be addressed like a normal stack-allocated array:
  *
  * ```c
- * int **my_2d = init_array_2d(5, 5, sizeof(**my2d));
+ * int **my_2d = lcl_array2d_init(5, 5, sizeof(**my2d));
  *
  * my_2d[0][2] = 1;
  * ```
@@ -45,7 +45,7 @@ void *lcl_array2d_init(size_t rows, size_t cols, size_t type_size);
  * The returned pointer can be addressed like a normal stack-allocated array:
  *
  * ```c
- * int ***my_3d = init_array_3d(5, 5, 5, sizeof(***my_3d));
+ * int ***my_3d = lcl_array3d_init(5, 5, 5, sizeof(***my_3d));
  *
  * my_3d[0][2][4] = 1;
  * ```
